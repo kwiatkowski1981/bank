@@ -4,7 +4,7 @@ public class BankAccount {
  private   Person owner;
  private  double balance;
 
-  private BankAccount(Person owner, double balance){
+  public BankAccount(Person owner, double balance){
         this.owner = owner;
         this.balance = balance;
     }

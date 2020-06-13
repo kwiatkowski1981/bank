@@ -8,7 +8,7 @@ public class LivingAdress {
  private   int currentZipCode;
  private   Person CurrentAdressOwner;
 
-     private LivingAdress(String currentStreet, int currentHomeNumber, int currentApartmentNumber,
+     public LivingAdress(String currentStreet, int currentHomeNumber, int currentApartmentNumber,
                          String currentCity, int currentZipCode, Person currentAdressOwner) {
          this.currentStreet = currentStreet;
          this.currentHomeNumber = currentHomeNumber;

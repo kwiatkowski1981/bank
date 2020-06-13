@@ -9,7 +9,7 @@ public class RegistredAdress {
     private   int registredZipCode;
     private   Person registredAdressOwner;
 
-    private RegistredAdress(String registredStreet, int registredHomeNumber, int registredApartmentNumber,
+    public RegistredAdress(String registredStreet, int registredHomeNumber, int registredApartmentNumber,
                            String registredCity, int registredZipCode, Person registredAdressOwner) {
         this.registredStreet = registredStreet;
         this.registredHomeNumber = registredHomeNumber;

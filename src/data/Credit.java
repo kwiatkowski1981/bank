@@ -7,7 +7,7 @@ public class Credit {
   private   double interestRate;
   private   int termMonths;
 
-   private Credit(Person borrower, double cashBorrowed, double cashReturned, double interestRate, int termMonths){
+   public Credit(Person borrower, double cashBorrowed, double cashReturned, double interestRate, int termMonths){
        this.borrower = borrower;
        this.cashBorrowed = cashBorrowed;
        this.cashReturned = cashReturned;

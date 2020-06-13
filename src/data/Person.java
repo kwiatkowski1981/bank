@@ -1,6 +1,7 @@
 package data;
 
 import data.LivingAdress;
+import data.RegistredAdress;
 
 public class Person {
           private       String       firstName;
@@ -8,7 +9,7 @@ public class Person {
           private final String       pesel;
           private       LivingAdress placeOfLiving;
 
-    private Person(String firstName, String lastName, String pesel) {
+    public Person(String firstName, String lastName, String pesel) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.pesel = pesel;
