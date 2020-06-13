@@ -1,4 +1,6 @@
-class BankAccount {
+package data;
+
+private class BankAccount {
     Person owner;
     double balance;
 

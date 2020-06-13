@@ -1,4 +1,6 @@
-class Credit {
+package data;
+
+private class Credit {
     Person borrower;
     double cashBorrowed;
     double cashReturned;

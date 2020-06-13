@@ -1,9 +1,16 @@
-class Adress {
+package data;
+
+private class Adress {
     String street;
     int homeNumber;
     int apartmentNumber;
     String city;
     int zipCode;
+
+    void printAdressInfo() {
+        System.out.println(getApartmentNumber() +", " +  getHomeNumber() +", " +  getStreet()
+                +", " +  getCity() +", " +  getZipCode());
+    }
 
     Adress(String street, int homeNumber, int apartmentNumber, String city, int zipCode){
         this.street = street;
