@@ -1,10 +1,10 @@
 package data;
 
-private class BankAccount {
-    Person owner;
-    double balance;
+public class BankAccount {
+ private   Person owner;
+ private  double balance;
 
-    BankAccount(Person owner, double balance){
+  private BankAccount(Person owner, double balance){
         this.owner = owner;
         this.balance = balance;
     }

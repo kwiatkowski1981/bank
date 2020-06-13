@@ -1,19 +1,17 @@
 package data;
 
-import data.Adress;
+import data.LivingAdress;
 
-private class Person {
-            String firstName;
-            String lastName;
-      final String pesel;
-            Adress city;
+public class Person {
+          private       String       firstName;
+          private       String       lastName;
+          private final String       pesel;
+          private       LivingAdress placeOfLiving;
 
-
-    Person(String firstName, String lastName, final String pesel, Adress city){
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.pesel = pesel;
-            this.city = city;
+    private Person(String firstName, String lastName, String pesel) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.pesel = pesel;
     }
 
     public String getFirstName() {
@@ -36,11 +34,11 @@ private class Person {
         return pesel;
     }
 
-    public Adress getCity() {
-        return city;
+    public LivingAdress getPlaceOfLiving() {
+        return placeOfLiving;
     }
 
-    public void setCity(Adress city) {
-        this.city = city;
+    public void setPlaceOfLiving(LivingAdress placeOfLiving) {
+        this.placeOfLiving = placeOfLiving;
     }
 }

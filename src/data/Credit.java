@@ -1,18 +1,18 @@
 package data;
 
-private class Credit {
-    Person borrower;
-    double cashBorrowed;
-    double cashReturned;
-    double interestRate;
-    int termMonths;
+public class Credit {
+  private   Person borrower;
+  private   double cashBorrowed;
+  private   double cashReturned;
+  private   double interestRate;
+  private   int termMonths;
 
-    Credit(Person borrower, double cashBorrowed, double cashReturned, double interestRate, int termMonths){
-        this.borrower = borrower;
-        this.cashBorrowed = cashBorrowed;
-        this.cashReturned = cashReturned;
-        this.interestRate = interestRate;
-        this.termMonths = termMonths;
+   private Credit(Person borrower, double cashBorrowed, double cashReturned, double interestRate, int termMonths){
+       this.borrower = borrower;
+       this.cashBorrowed = cashBorrowed;
+       this.cashReturned = cashReturned;
+       this.interestRate = interestRate;
+       this.termMonths = termMonths;
     }
 
     public Person getBorrower() {
