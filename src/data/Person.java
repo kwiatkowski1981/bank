@@ -7,7 +7,7 @@ public class Person {
           private       String       firstName;
           private       String       lastName;
           private final String       pesel;
-          private       LivingAdress placeOfLiving;
+
 
     public Person(String firstName, String lastName, String pesel) {
         this.firstName = firstName;
@@ -35,11 +35,4 @@ public class Person {
         return pesel;
     }
 
-    public LivingAdress getPlaceOfLiving() {
-        return placeOfLiving;
-    }
-
-    public void setPlaceOfLiving(LivingAdress placeOfLiving) {
-        this.placeOfLiving = placeOfLiving;
-    }
 }
