@@ -20,7 +20,7 @@ public class Bank {
         Credit credit1 = new Credit(person1, 2000.0, 0.0,0.05, 12);
 
 
-
+        person1.printInfo();
         System.out.println("Osoba:");
         System.out.println(person1.getFirstName() + " " + person1.getLastName() + " " + person1.getPesel());
         System.out.println(livingAdress1.getCurrentStreet() + " " + livingAdress1.getCurrentHomeNumber() + " " +
