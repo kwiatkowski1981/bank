@@ -1,28 +1,31 @@
 package logic;
-
 import data.*;
 
 public class Bank {
     public static void main(String[] args) {
 
+      Person[] persons = new Person[1000];
 
-        Person person1 = new Person("Jan", "Kowalski", "90897812362");
+        persons[0] = new Person("Jan", "Kowalski", "90897812362");
 
         LivingAdress livingAdress1 = new LivingAdress("Longstreet", 216, 6,
-                "Basel", 4000, person1);
+                "Basel", 4000, persons[0]);
 
         RegistredAdress registredAdress1 = new RegistredAdress ("Mainroad", 25,
-                1, "Zurich", 8000, person1);
+                1, "Zurich", 8000, persons[0]);
 
-        BankAccount account1 = new BankAccount(person1, 10_000);
-
-
-        Credit credit1 = new Credit(person1, 2000.0, 0.0,0.05, 12);
+        BankAccount account1 = new BankAccount(persons[0], 10_000);
 
 
-        person1.printInfo();
+        Credit credit1 = new Credit(persons[0], 2000.0, 0.0,0.05, 12);
+
+
+        persons[0].printInfo();
+        registredAdress1.printRegistredAdressInfo();
+        livingAdress1.printLivingAdressInfo();
+
         System.out.println("Osoba:");
-        System.out.println(person1.getFirstName() + " " + person1.getLastName() + " " + person1.getPesel());
+        System.out.println(persons[0].getFirstName() + " " + persons[0].getLastName() + " " + persons[0].getPesel());
         System.out.println(livingAdress1.getCurrentStreet() + " " + livingAdress1.getCurrentHomeNumber() + " " +
                 livingAdress1.getCurrentCity());
 

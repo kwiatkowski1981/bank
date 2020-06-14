@@ -1,27 +1,29 @@
 package data;
 
 public class BankAccount {
- private   Person owner;
- private  double balance;
 
-  public BankAccount(Person owner, double balance){
+        private   Person owner;
+        private  double balance;
+
+
+        public BankAccount(Person owner, double balance){
         this.owner = owner;
         this.balance = balance;
     }
 
-    public Person getOwner() {
+        public Person getOwner() {
         return owner;
     }
 
-    public void setOwner(Person owner) {
+        public void setOwner(Person owner) {
         this.owner = owner;
     }
 
-    public double getBalance() {
+        public double getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
+        public void setBalance(double balance) {
         this.balance = balance;
     }
 }

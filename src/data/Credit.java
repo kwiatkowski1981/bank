@@ -1,11 +1,13 @@
 package data;
 
 public class Credit {
-  private   Person borrower;
-  private   double cashBorrowed;
-  private   double cashReturned;
-  private   double interestRate;
-  private   int termMonths;
+
+        private   Person borrower;
+        private   double cashBorrowed;
+        private   double cashReturned;
+        private   double interestRate;
+        private   int termMonths;
+
 
    public Credit(Person borrower, double cashBorrowed, double cashReturned, double interestRate, int termMonths){
        this.borrower = borrower;

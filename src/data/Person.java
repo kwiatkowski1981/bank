@@ -9,6 +9,7 @@ public class Person {
           private final String       pesel;
 
 
+
     public void printInfo() {
         String info = "Firstname:" + " " + getFirstName() + ", " + "Lastname:" + " " + getLastName() + ", "
                 + "Pesel:" + " " + getPesel();

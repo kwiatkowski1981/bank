@@ -9,6 +9,18 @@ public class RegistredAdress {
     private   int registredZipCode;
     private   Person registredAdressOwner;
 
+
+
+    public void printRegistredAdressInfo() {
+        String info =   "Street:" + " " + getRegistredStreet() + ", " +
+                        "Home Number:" + " " + getRegistredHomeNumber() + ", " +
+                        "Apartment Number:" + " " + getRegistredApartmentNumber() + ", " +
+                        "City:" + " " + getRegistredCity() + ", " +
+                        "Zip Code:" + " " + getRegistredZipCode();
+                System.out.println(info);
+    }
+
+
     public RegistredAdress(String registredStreet, int registredHomeNumber, int registredApartmentNumber,
                            String registredCity, int registredZipCode, Person registredAdressOwner) {
         this.registredStreet = registredStreet;
