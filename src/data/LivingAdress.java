@@ -31,51 +31,51 @@ public class LivingAdress {
                 this.CurrentAdressOwner = currentAdressOwner;
                 }
 
-                 public String getCurrentStreet() {
+    public String getCurrentStreet() {
         return currentStreet;
     }
 
-                 public void setCurrentStreet(String currentStreet) {
+    public void setCurrentStreet(String currentStreet) {
         this.currentStreet = currentStreet;
     }
 
-                 public int getCurrentHomeNumber() {
+    public String getCurrentHomeNumber() {
         return currentHomeNumber;
     }
 
-                 public void setCurrentHomeNumber(int currentHomeNumber) {
+    public void setCurrentHomeNumber(String currentHomeNumber) {
         this.currentHomeNumber = currentHomeNumber;
     }
 
-                 public int getCurrentApartmentNumber() {
+    public int getCurrentApartmentNumber() {
         return currentApartmentNumber;
     }
 
-                 public void setCurrentApartmentNumber(int currentApartmentNumber) {
-                 this.currentApartmentNumber = currentApartmentNumber;
-                 }
+    public void setCurrentApartmentNumber(int currentApartmentNumber) {
+        this.currentApartmentNumber = currentApartmentNumber;
+    }
 
-                 public String getCurrentCity() {
+    public String getCurrentCity() {
         return currentCity;
     }
 
-                 public void setCurrentCity(String currentCity) {
+    public void setCurrentCity(String currentCity) {
         this.currentCity = currentCity;
     }
 
-                 public int getCurrentZipCode() {
+    public int getCurrentZipCode() {
         return currentZipCode;
     }
 
-                 public void setCurrentZipCode(int currentZipCode) {
+    public void setCurrentZipCode(int currentZipCode) {
         this.currentZipCode = currentZipCode;
     }
 
-                 public Person getCurrentAdressOwner() {
+    public Person getCurrentAdressOwner() {
         return CurrentAdressOwner;
     }
 
-                 public void setCurrentAdressOwner(Person currentAdressOwner) {
-                 CurrentAdressOwner = currentAdressOwner;
-                }
+    public void setCurrentAdressOwner(Person currentAdressOwner) {
+        CurrentAdressOwner = currentAdressOwner;
+    }
 }
