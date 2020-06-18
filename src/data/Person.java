@@ -3,12 +3,11 @@ package data;
 
 
 public class Person {
-          private       String              firstName;
-          private       String              lastName;
-          private final String              pesel;
-          private       LivingAdress        livingAdress;
-          private       RegistredAdress     registredAdress;
-
+          private       String           firstName;
+          private       String            lastName;
+          private final String               pesel;
+          private       Adress     registredAdress;
+          private       Adress        livingAdress;
 
 
 
@@ -19,32 +18,37 @@ public class Person {
         if (getRegistredAdress() != null) {
             info = info + " " + "Registred Adress:" + " " + getRegistredAdress();
         }
-//        if ( getLivingAdress() != getRegistredAdress()) {
-//            info = info + "Living Adress:" + " " +  getLivingAdress();
-//        }
+        if ( getLivingAdress() != getRegistredAdress()) {
+            info = info + "Living Adress:" + " " +  getLivingAdress();
+        }
         System.out.println(info);
     }
 
 
+    // constructor 1
+    public Person(String firstName, String lastName, String pesel, Adress registredAdress, Adress livingAdress) {
+        this(firstName, lastName, pesel, registredAdress);
+        this.livingAdress = livingAdress;
 
-    public Person(String firstName, String lastName, String pesel, LivingAdress livingAdress,
-                  RegistredAdress registredAdress) {
-        this(firstName, lastName, pesel, livingAdress);
+    }
+
+    // constructor 2
+
+    public Person(String firstName, String lastName, String pesel, Adress registredAdress) {
+        this(firstName, lastName, pesel);
         this.registredAdress = registredAdress;
     }
 
-    public Person(String firstName, String lastName, String pesel, LivingAdress livingAdress) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.pesel = pesel;
-        this.livingAdress = livingAdress;
-    }
+        // constructor 3
 
     public Person(String firstName, String lastName, String pesel) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.pesel = pesel;
     }
+
+
+    // getter and setter
 
     public String getFirstName() {
         return firstName;
@@ -66,19 +70,19 @@ public class Person {
         return pesel;
     }
 
-    public LivingAdress getLivingAdress() {
-        return livingAdress;
-    }
-
-    public void setLivingAdress(LivingAdress livingAdress) {
-        this.livingAdress = livingAdress;
-    }
-
-    public RegistredAdress getRegistredAdress() {
+    public Adress getRegistredAdress() {
         return registredAdress;
     }
 
-    public void setRegistredAdress(RegistredAdress registredAdress) {
+    public void setRegistredAdress(Adress registredAdress) {
         this.registredAdress = registredAdress;
+    }
+
+    public Adress getLivingAdress() {
+        return livingAdress;
+    }
+
+    public void setLivingAdress(Adress livingAdress) {
+        this.livingAdress = livingAdress;
     }
 }

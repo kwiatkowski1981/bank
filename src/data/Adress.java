@@ -21,13 +21,17 @@ public class Adress {
     }
 
     public Adress(String street, String homeNumber, int apartmentNumber, String city, int zipCode, Person adressOwner) {
-        Street = street;
+        this.Street = street;
         HomeNumber = homeNumber;
         ApartmentNumber = apartmentNumber;
         City = city;
         ZipCode = zipCode;
         AdressOwner = adressOwner;
     }
+
+
+
+
 
     public String getStreet() {
         return Street;
