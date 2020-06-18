@@ -1,7 +1,6 @@
 package data;
 
-import data.LivingAdress;
-import data.RegistredAdress;
+
 
 public class Person {
           private       String              firstName;
@@ -15,13 +14,18 @@ public class Person {
 
     public void printInfo() {
         String info = "Firstname:" + " " + getFirstName() + ", " + "Lastname:" + " " + getLastName() + ", "
-                + "Pesel:" + " " + getPesel() + " " + "Registred Adress:" + " " + getRegistredAdress();
+                + "Pesel:" + " " + getPesel();
 
+        if (getRegistredAdress() != null) {
+            info = info + " " + "Registred Adress:" + " " + getRegistredAdress();
+        }
 //        if ( getLivingAdress() != getRegistredAdress()) {
 //            info = info + "Living Adress:" + " " +  getLivingAdress();
 //        }
         System.out.println(info);
     }
+
+
 
     public Person(String firstName, String lastName, String pesel, LivingAdress livingAdress,
                   RegistredAdress registredAdress) {
