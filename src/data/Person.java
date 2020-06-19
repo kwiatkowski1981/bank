@@ -25,14 +25,22 @@ public class Person {
     }
 
 
-    // constructor 1
+
+    public String printInfo2() { return
+            ("Firstname:" + " " + getFirstName() + "\n " + "Lastname:" + " " + getLastName() + "\n "
+                    + "Pesel:" + " " + getPesel());
+    }
+
+
+         // constructor 1
+
     public Person(String firstName, String lastName, String pesel, Adress registredAdress, Adress livingAdress) {
         this(firstName, lastName, pesel, registredAdress);
         this.livingAdress = livingAdress;
 
     }
 
-    // constructor 2
+         // constructor 2
 
     public Person(String firstName, String lastName, String pesel, Adress registredAdress) {
         this(firstName, lastName, pesel);
@@ -48,7 +56,7 @@ public class Person {
     }
 
 
-    // getter and setter
+        // getter and setter
 
     public String getFirstName() {
         return firstName;
