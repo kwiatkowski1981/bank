@@ -5,10 +5,7 @@ public class BankAccount {
         private   Person owner;
         private  double balance;
 
-
-//        public void BankAccount() {
-//            info = ();
-//        }
+      }
 
 
         public BankAccount(Person owner, double balance){
